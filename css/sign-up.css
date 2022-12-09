@@ -45,7 +45,7 @@ form .fields .field input{
     position: relative;
     height: 44px;
     padding-left: 12px;
-    width: 90%;
+    width: 85%;
 }
 form .fields .field input::placeholder{
     font-size: 16px;
