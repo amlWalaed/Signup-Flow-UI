@@ -1,0 +1,95 @@
+.content .photo-container img{
+    height: 100%;
+    border-radius: var(--border-radius-value);
+    -webkit-border-radius: var(--border-radius-value);
+    -moz-border-radius: var(--border-radius-value);
+    -ms-border-radius: var(--border-radius-value);
+    -o-border-radius: var(--border-radius-value);
+}
+@media (max-width: 567px){
+    .content .photo-container img{
+        width: 315px;
+    }
+}
+.left-content .text h1{
+    font-size: 42px;
+}
+@media (max-width: 768px) {
+    .content .left-content .text{
+        gap: 16px;
+    }
+    .content .left-content .text h1 {
+        font-size: 32px;
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form .fields{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form .fields .field{
+    background-color: white;
+    border-radius: var(--border-radius-value);
+    border: 1px solid var(--border-color);
+    padding: 8px 20px 8px 20px;
+}
+form .fields .field input{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    position: relative;
+    height: 44px;
+    padding-left: 12px;
+    width: 90%;
+}
+form .fields .field input::placeholder{
+    font-size: 16px;
+    color: black;
+}
+form .fields .field span{
+    position: relative;
+    padding-right: 5px;
+}
+form .fields .field span svg {
+    color: var(--icon-color);
+}
+form .fields .field span {
+    border-right: 1px solid var(--border-color);
+    padding-right: 12px;
+}
+form .fields .validation-message{
+    width: 100%;
+    background-color: var(--validation-color);
+    color: white;
+    font-size: 18px;
+    border-radius: var(--border-radius-value);
+    -webkit-border-radius: var(--border-radius-value);
+    -moz-border-radius: var(--border-radius-value);
+    -ms-border-radius: var(--border-radius-value);
+    -o-border-radius: var(--border-radius-value);
+    padding: 5px;
+    /* display: none; */
+    animation: disappear 5s  linear 1 forwards;
+    -webkit-animation: disappear 5s  linear 1 forwards;
+}
+@keyframes disappear {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.75;
+    }
+    50%{
+        opacity: 0.5;
+    }75%{
+        opacity: 0.25;
+    }
+    100%{
+        opacity: 0;
+    }
+}
